@@ -2,12 +2,11 @@
 import 'dart:convert';
 
 import 'package:collection/collection.dart';
-import 'package:equatable/equatable.dart';
 
 import 'submodels/meta_model.dart';
 import 'submodels/reviews_model.dart';
 
-class Product extends Equatable {
+class Product {
   num? id;
   String? title;
   String? description;
@@ -245,10 +244,6 @@ class Product extends Equatable {
         images.hashCode ^
         thumbnail.hashCode;
   }
-
-  @override
-  // TODO: implement props
-  List<Object?> get props => throw UnimplementedError();
 }
 
 class Dimensions {
