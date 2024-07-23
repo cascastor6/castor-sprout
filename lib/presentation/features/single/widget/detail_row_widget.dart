@@ -29,7 +29,7 @@ class DetailRow extends StatelessWidget {
                       info!,
                       style: const TextStyle(fontWeight: FontWeight.bold),
                     )
-                  : customWidgetinfo ?? SizedBox(),
+                  : customWidgetinfo ?? const SizedBox(),
             ],
           ),
         ),

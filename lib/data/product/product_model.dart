@@ -312,7 +312,7 @@ class Dimensions {
   int get hashCode => width.hashCode ^ height.hashCode ^ depth.hashCode;
 }
 
-final productModelDummy = Product.fromMap({
+final productModelDummy = Product.fromMap(const {
   "id": 1,
   "title": "Essence Mascara Lash Princess",
   "description":

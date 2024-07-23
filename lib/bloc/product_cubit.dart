@@ -26,7 +26,7 @@ class ProductCubit extends Cubit<ProductState> {
         emit(ProductStateSuccess(productList: productList));
         print('success');
       } else {
-        emit(ProductStateFailure('Failed to load products'));
+        emit(const ProductStateFailure('Failed to load products'));
       }
     } catch (error) {
       emit(ProductStateFailure(error.toString()));
@@ -43,7 +43,7 @@ class ProductCubit extends Cubit<ProductState> {
         final Product product = Product.fromJson(response.body);
         emit(ProductStateSuccess(productList: [product]));
       } else {
-        emit(ProductStateFailure('Failed to load product'));
+        emit(const ProductStateFailure('Failed to load product'));
       }
     } catch (error) {
       emit(ProductStateFailure(error.toString()));

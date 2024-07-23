@@ -67,7 +67,7 @@ class _ListItemWidgetState extends State<ListItemWidget> {
                                       '\$${(widget.product.price! * ((100 - widget.product.discountPercentage!) / 100)).toStringAsFixed(2)}',
                                       style: const TextStyle(fontSize: 18),
                                     ),
-                                    HSpace.md(),
+                                    const HSpace.md(),
                                     Text(
                                       '\$${widget.product.price!}',
                                       style: const TextStyle(
@@ -75,7 +75,7 @@ class _ListItemWidgetState extends State<ListItemWidget> {
                                               TextDecoration.lineThrough,
                                           color: Colors.grey),
                                     ),
-                                    HSpace.md(),
+                                    const HSpace.md(),
                                     Container(
                                         decoration: BoxDecoration(
                                             color: Colors.green,

@@ -20,7 +20,7 @@ class DetailsScreen extends StatefulWidget {
 }
 
 class DetailsScreenState extends State<DetailsScreen> {
-  ProductCubit _productCubit = ProductCubit();
+  final ProductCubit _productCubit = ProductCubit();
 
   @override
   void initState() {
@@ -90,7 +90,7 @@ class DetailsScreenState extends State<DetailsScreen> {
                                       '\$${(product.price! * ((100 - product.discountPercentage!) / 100)).toStringAsFixed(2)}',
                                       style: const TextStyle(fontSize: 18),
                                     ),
-                                    HSpace.md(),
+                                    const HSpace.md(),
                                     Text(
                                       '\$${product.price!}',
                                       style: const TextStyle(
@@ -98,7 +98,7 @@ class DetailsScreenState extends State<DetailsScreen> {
                                               TextDecoration.lineThrough,
                                           color: Colors.grey),
                                     ),
-                                    HSpace.md(),
+                                    const HSpace.md(),
                                     Container(
                                         decoration: BoxDecoration(
                                             color: Colors.green,
@@ -148,7 +148,7 @@ class DetailsScreenState extends State<DetailsScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: product.tags!
                                         .map((e) => Container(
-                                            margin: EdgeInsets.all(2),
+                                            margin: const EdgeInsets.all(2),
                                             decoration: BoxDecoration(
                                                 color: Colors.blueGrey,
                                                 borderRadius:
@@ -267,7 +267,7 @@ class DetailsScreenState extends State<DetailsScreen> {
                   child: CircularProgressIndicator(),
                 );
               }
-              return SizedBox();
+              return const SizedBox();
             },
           ),
         ));

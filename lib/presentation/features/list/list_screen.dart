@@ -19,7 +19,7 @@ class _ListScreenState extends State<ListScreen> {
 
   final ProductCubit _productCubit = ProductCubit();
 
-  List<Product> _productList = [];
+  final List<Product> _productList = [];
 
   @override
   void initState() {

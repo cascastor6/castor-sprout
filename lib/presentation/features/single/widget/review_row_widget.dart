@@ -1,5 +1,4 @@
 import 'package:castor_sprout/data/product/submodels/reviews_model.dart';
-import 'package:castor_sprout/utils/spacers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
